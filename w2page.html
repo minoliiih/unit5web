@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>𓁹𓁹</title>
+    <link rel="stylesheet" href="w2pagestyle.css">
+</head>
+<body>
+    <h2>browse meee!</h2>
+    <button onclick="browseMe()">">3<"</button>
+
+    <script>
+        function browseMe() {
+            const userInput = prompt("") //MAYBE MAKE INTO WINDOWS 95 ERROR WARNING
+            if (userInput !== null) {
+                const email = "ithimkitrustyouew@gmail.com";
+                const subject = encodeURIComponent("fyi")
+                const body = encodeURIComponent(
+                    "You are always seen. Nothing belongs to you. Nothing ever did."
+                );
+                window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+            } else {
+                alert(":sad face: ;p");
+            }
+        }
+    </script>
+
+</body>
+</html>

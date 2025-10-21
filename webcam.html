@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>whatdo u think?</title>
+  <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #111;
+        color: white;
+        margin: 0;
+        flex-direction: column;
+    }
+    video {
+        
+        height: 100%;
+        width: 100%;
+        max-width: 640px;
+        background: black;
+    }
+  </style>
+  </head>
+  <body>
+
+    <video id="webcam" autoplay playsinline></video>
+
+    <script>
+        const video = document.getElementById('webcam');
+
+        //to rq webcam access
+        async function startWebcam() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+                video.srcObject = stream;
+            } catch (err) {
+                alert('error accessing webcam: ' + err.message);
+                console.error(err);
+            }
+            }
+
+            window.addEventListener('load', startWebcam);
+    </script>
+  </body>
+  </html>
