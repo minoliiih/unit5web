@@ -23,9 +23,9 @@ window.addEventListener("load", () => {
 document.getElementById("okButton").addEventListener("click", () => {
   // A list of pages to open — you can add or remove as many as you like
   const pages = [
-    "/new window1/window2.html",
-    "/new window1/window3.html",
-    "/new window1/window4.html"
+    "../new_window1/window2.html",
+    "../new_window1/window3.html",
+    "/..new_window1/window4.html"
   ];
 
   // For each page, open it in a random position and size
@@ -41,7 +41,7 @@ document.getElementById("okButton").addEventListener("click", () => {
     const top = Math.floor(Math.random() * (window.screen.availHeight - height));
 
     //Increasing the number of pages in the array -- repeating some (if u want)
-    const pages = Array(10).fill("/new window1/windowex.html");
+    const pages = Array(10).fill("/new_window1/windowex.html");
 
     //Delaying each popup slightly
     pages.forEach((page, i) => {
