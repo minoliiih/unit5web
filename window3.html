@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>prove yourself</title>
+<link rel="stylesheet" href="window3style.css">
+</head>
+<body>
+  <div class="captcha-container">
+    <h4>Enter the following:</h4>
+    <img id="captchaImage" src="" alt="captcha" />
+    <label for="captchaInput">Your Answer</label>
+    <input type="text" id="captchaInput">
+    <button id="verifyBtn">Verify</button>
+    <p id="result"></p>
+  </div>
+
+  <div class="error">
+    <div class="title">Critical Error
+      <button class="close-button">X</button>
+    </div>
+    <div class="message">
+  <img src="icons/warning.png"/>
+  An error has occured while trying to display an error message.
+</div>
+    <button class="ok"> <span>OK</span></button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="window3script.js"></script>
+
+</body>
+</html>
